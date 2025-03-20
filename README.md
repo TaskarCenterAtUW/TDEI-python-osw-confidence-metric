@@ -1,7 +1,9 @@
 # TDEI-python-ms-osw-confidence-metric
 
 ## Introduction
-OSW Confidence metric service
+OSW Confidence metric service. This service is used to calculate the confidence score of a specific dataset. 
+- If there are no sub-region files, the service generates vornoi polygons based on the input area
+- If there are sub-regions given, the service generates the confidence score of the sub-region polygons.
 
 ## Requirements
 python 3.10
@@ -106,3 +108,7 @@ If you want to simulate the confidence calculation, add another environment vari
 ```
 SIMULATE_METRIC=YES
 ```
+
+## Testing locally
+Right now there are no specific scripts to test the functionality locally.
+However, one may use the scripts available in [tests](/tests/) to run any specific use-case
