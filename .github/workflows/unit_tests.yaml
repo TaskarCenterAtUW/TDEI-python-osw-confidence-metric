@@ -48,7 +48,7 @@ jobs:
           mkdir -p test_results
           log_file="test_results/${timestamp}_report.log"
           echo -e "\nTest Cases Report Report\n" >> $log_file
-          python -m coverage run --source=src -m unittest discover -v tests/unit_tests | tee -a $log_file
+          python -m coverage run --source=src -m unittest discover -s tests/unit_tests | tee -a $log_file
           coverage report | tee -a $log_file
 
 

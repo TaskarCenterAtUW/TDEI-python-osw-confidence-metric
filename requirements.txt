@@ -5,4 +5,4 @@ html_testRunner==1.2.1
 osw-confidence-metric==0.0.8
 jsonschema==4.21.1
 geojson==3.1.0
-pyarrow
+dask==2023.9.2
